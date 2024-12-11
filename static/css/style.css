@@ -1,0 +1,124 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+.button-group button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-group button:hover {
+    background-color: #45a049;
+}
+
+.result-container,
+.steps-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.result,
+.steps {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #fff;
+}
+
+.conversion-table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-family: monospace;
+    min-width: 250px;
+}
+
+.conversion-table th,
+.conversion-table td {
+    border: 1px solid #333;
+    padding: 4px 6px;
+    text-align: center;
+    width: 25%;
+}
+
+.conversion-table th {
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.conversion-table td {
+    background-color: #fff;
+    font-size: 13px;
+}
+
+.steps {
+    white-space: pre-wrap;
+}
+
+.steps table {
+    white-space: normal;
+} 

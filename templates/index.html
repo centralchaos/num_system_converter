@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Number System Converter</h1>
+        
+        <div class="input-group">
+            <label for="number">Enter Number:</label>
+            <input type="text" id="number" required>
+        </div>
+
+        <div class="input-group">
+            <label for="fromBase">From Base:</label>
+            <select id="fromBase">
+                <option value="2">Binary (2)</option>
+                <option value="8">Octal (8)</option>
+                <option value="10" selected>Decimal (10)</option>
+                <option value="16">Hexadecimal (16)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="toBase">To Base:</label>
+            <select id="toBase">
+                <option value="2">Binary (2)</option>
+                <option value="8">Octal (8)</option>
+                <option value="10">Decimal (10)</option>
+                <option value="16">Hexadecimal (16)</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button onclick="convert()">Convert</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="swap()">Swap</button>
+        </div>
+
+        <div class="result-container">
+            <h3>Result:</h3>
+            <div id="result" class="result"></div>
+            <button onclick="copyResult()">Copy Result</button>
+        </div>
+
+        <div class="steps-container">
+            <h3>Solution Steps:</h3>
+            <pre id="steps" class="steps"></pre>
+            <button onclick="copySteps()">Copy Steps</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
